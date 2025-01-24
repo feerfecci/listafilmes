@@ -25,8 +25,10 @@ export default function App() {
     <View style={styles.container}>
       <FlatList
         data={filmes}
+        ///a pk precisa estar em string
+        keyExtractor={item => String(item.id)}
         renderItem={
-          ({ filme }) => { }
+          ({ filme }) => { <Filmes data={filme} /> }
         }
       />
     </View>

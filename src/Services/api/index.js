@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
+    //passamos a base para usar com varias apis
     baseURL: 'https://sujeitoprogramador.com/',
 
 });
